@@ -4,7 +4,7 @@ Please take a look at `src/modules/albums/TopAlbumsList` folder. Let's assume th
 files in that destination are about to be merged. Review that part of the code
 and send us your feedback.
 
-If you want you can run a code in that repo. To do so just follow these steps:
+If you want, you can run the code from this repo. To do so just follow these steps:
 
 1. Run `yarn install` command
 2. Next run `yarn start`
