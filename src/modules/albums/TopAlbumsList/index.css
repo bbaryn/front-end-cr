@@ -1,0 +1,65 @@
+.Layout {
+  display: grid;
+  max-width: 100%;
+  background: linear-gradient(to right, #fff, #ddd);
+  grid-template-columns: min-content;
+  justify-content: center;
+  justify-items: center;
+  grid-gap: 16px;
+  min-height: 100vh;
+  padding: 1em;
+  align-content: start;
+}
+
+.Card {
+  background: #fff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  border-radius: 0.25em;
+  width: 600px;
+  max-width: 100%;
+  align-self: start;
+}
+
+.Layout__search {
+  width: 600px;
+  max-width: 100%;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 0.25em;
+  border: 0;
+  padding: 1em;
+  align-self: start;
+}
+
+.Card__image {
+  display: inline-block;
+  vertical-align: middle;
+  width: 10%;
+}
+
+.Card__text {
+  display: inline-block;
+  width: 80%;
+  font-size: 1rem;
+  font-weight: 500;
+  vertical-align: middle;
+  margin: 0 16px;
+}
+
+.Card__like__heart {
+  color: #f00;
+  width: 10%;
+  cursor: pointer;
+}
+
+.Card__like {
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.Layout__splash--screen {
+  align-self: center;
+  justify-self: center;
+  font-size: 25px;
+  font-weight: 700;
+}

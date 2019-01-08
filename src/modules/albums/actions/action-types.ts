@@ -1,0 +1,8 @@
+export const LOAD_ALBUMS_LIST_REQUEST = "app/albums/LOAD_ALBUMS_LIST_REQUEST";
+export const LOAD_ALBUMS_LIST_SUCCESS = "app/albums/LOAD_ALBUMS_LIST_SUCCESS";
+export const LOAD_ALBUMS_LIST_FAILURE = "app/albums/LOAD_ALBUMS_LIST_FAILURE";
+
+export const SET_ALBUMS_LIST = "app/albums/SET_ALBUMS_LIST";
+
+export const ALBUMS_LIST_COMPONENT_MOUNT =
+  "app/albums/ALBUMS_LIST_COMPONENT_MOUNT";
