@@ -1,4 +1,4 @@
-.Layout {
+.Layout {  
   display: grid;
   max-width: 100%;
   background: linear-gradient(to right, #fff, #ddd);
@@ -6,7 +6,7 @@
   justify-content: center;
   justify-items: center;
   grid-gap: 16px;
-  min-height: 100vh;
+  min-height: 100vh; //always prefere same units in code, not all of them
   padding: 1em;
   align-content: start;
 }
