@@ -2,6 +2,7 @@ import React, { Component, Fragment } from "react";
 import { connect } from "react-redux";
 import { Dispatch } from "redux";
 import * as Types from "Types";
+//separate local imports from dependencies
 import "./index.css";
 import { albumListComponentMounted } from "../actions";
 
@@ -46,7 +47,11 @@ class ListComponent extends Component<Props, State> {
   }
 
   render() {
-    const { albums, isLoading } = this.props;
+    //Destructure props for readability
+    const { 
+      albums, 
+      isLoading 
+    } = this.props;
     return (
       <div className={"Layout"}>
         {isLoading && (
@@ -59,17 +64,17 @@ class ListComponent extends Component<Props, State> {
             <input
               className={"Layout__search"}
               value={this.state.searchPhrase}
-              onChange={e => this.search(e.target.value)}
+              onChange={(e) => this.search(e.target.value)}
               placeholder={"Search album"}
             />
             {albums
-              .filter(album => album.name.includes(this.state.searchPhrase))
-              .map((album, index) => (
+              .filter(album => album.name.includes(this.state.searchPhrase)) //add toLowerCase() method to search for a word regardless of letter size
+              .map((album, index) => ( //add method to prevent double display of searched positions
                 <div className={"Card"} key={index}>
                   <img className={"Card__image"} src={album.coverImageUrl} />
                   <h2 className={"Card__text"}>{album.name}</h2>
                   <div className={"Card__like"}>
-                    {this.state.likedAlbums.has(index) ? (
+                    {this.state.likedAlbums.has(index) ? ( //save state in local storage to remember which position user likes
                       <i
                         onClick={() => this.unlikeAlbum(index)}
                         className={"Card__like__heart fas fa-heart"}
